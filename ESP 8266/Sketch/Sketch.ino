@@ -6,6 +6,7 @@
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(LEDcnt, LEDPIN, NEO_RGBW + NEO_KHZ800);
 
+//Gamma-Table
 byte neopix_gamma[] = {
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1,  1,  1,
@@ -27,10 +28,8 @@ byte neopix_gamma[] = {
 byte buffer[4];
 int counter = 0;
 
-
 void setup() 
 {
-  
   Serial.begin (115200);
   strip.setBrightness(BRIGHTNESS);
   strip.begin();
@@ -39,37 +38,23 @@ void setup()
 
 void loop() 
 {
-
+  while(Serial.available())
+  {
+    buffer[counter] = Serial.read();
+    counter = counter+1;
   
-while(Serial.available())
-{
-  buffer[counter] = Serial.read();
-  counter = counter+1;
-
-
-if(counter == 4)
-{
-  Serial.print("reached!");
-
-  int led = buffer[0];
-  int r = buffer[1];
-  int g = buffer[2];
-  int b = buffer[3];
-    
-  strip.setPixelColor(led, strip.Color(neopix_gamma[r],neopix_gamma[g],neopix_gamma[b],0)); 
-  
-  byte buffer[4];
-  counter =0;
-  strip.show();
+    if(counter == 4)
+    {
+      int led = buffer[0];
+      int r = buffer[1];
+      int g = buffer[2];
+      int b = buffer[3];
+        
+      strip.setPixelColor(led, strip.Color(neopix_gamma[r],neopix_gamma[g],neopix_gamma[b],0)); 
+      counter =0;
+      byte buffer[4];
+      strip.show();
+    }
+  }
 }
-
-
-
-
-}
-}
-
-
-
-
 
