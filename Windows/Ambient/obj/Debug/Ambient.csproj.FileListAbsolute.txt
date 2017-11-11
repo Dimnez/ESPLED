@@ -1,0 +1,10 @@
+c:\users\daniel\source\repos\Ambient\Ambient\bin\Debug\Ambient.exe.config
+c:\users\daniel\source\repos\Ambient\Ambient\bin\Debug\Ambient.exe
+c:\users\daniel\source\repos\Ambient\Ambient\bin\Debug\Ambient.pdb
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.csprojResolveAssemblyReference.cache
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.Properties.Resources.resources
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.csproj.GenerateResource.Cache
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.csproj.CoreCompileInputs.cache
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.exe
+c:\users\daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.pdb
+C:\Users\Daniel\source\repos\Ambient\Ambient\obj\Debug\Ambient.MainForm.resources
