@@ -19,7 +19,7 @@ Probably the cheapest solution for an ambient-light out there. Currently it need
 - Arduino IDE (https://www.arduino.cc/en/main/software)
 
 
-#H ow to use
+# How to use
 1. Flash the ESP8266 through the Arduino IDE - Use the .io-File at ESP8266/sketch.io
 2. Start the Windows-Application
 3. Enjoy
